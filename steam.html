@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Indovina il Personaggio STEAM</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        .container { border: 2px solid #333; display: inline-block; padding: 20px; border-radius: 10px; }
+        button { padding: 10px 20px; margin: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Indovina il Personaggio!</h1>
+        <p id="testo-domanda">Caricamento...</p>
+        <div id="controlli">
+            <button onclick="rispondi(true)">SÌ</button>
+            <button onclick="rispondi(false)">NO</button>
+        </div>
+        <button id="btn-reset" onclick="iniziaGioco()" style="display:none;">Gioca Ancora</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
