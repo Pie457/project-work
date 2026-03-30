@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <title>Indovina il Personaggio STEAM</title>
     <style>
+        body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    min-height: 100vh;      
+}
+
+                
         body { font-family: sans-serif; text-align: center; padding-top: 50px; }
         .container { border: 2px solid #333; display: inline-block; padding: 20px; border-radius: 10px; }
         button { padding: 10px 20px; margin: 10px; cursor: pointer; }
     </style>
 </head>
-<body>
-
+        
+    
     <div class="container">
         <h1>Indovina il Personaggio!</h1>
         <p id="testo-domanda">Caricamento...</p>
@@ -20,6 +29,9 @@
         </div>
         <button id="btn-reset" onclick="iniziaGioco()" style="display:none;">Gioca Ancora</button>
     </div>
+    <label for="feedback"> Personaggi:</label><br>
+        <a id="feedback">Samantha Cristoforetti<br/>Marie Curie<br/>Katherine Johnson<br/>Ada Lovelace<br/>Leonardo da Vinci<br/>Isaac Newton<br/>Alan Turing<br/>Albert Einstein<br/> </a>
+
 
     <script src="script.js"></script>
 </body>
