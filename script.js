@@ -1,4 +1,4 @@
-// Struttura aggiornata con più rami e personaggi
+
 const albero = {
     domanda: "È una donna?",
     si: {
@@ -29,8 +29,7 @@ const albero = {
     }
 };
 
-// --- Il resto delle funzioni (iniziaGioco, mostraDomanda, rispondi) 
-// rimane identico a quello di prima! ---
+
 
 let nodoCorrente;
 
